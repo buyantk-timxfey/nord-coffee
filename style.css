@@ -20,7 +20,7 @@ body {
 
 /* Шапка */
 .header {
-  background: #00704a; /* живой зелёный */
+  background: #5b625a; /* живой зелёный */
   color: #fff;
   padding: 12px 0;
   position: sticky;
@@ -152,19 +152,19 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s;
-  background: #00704a; /* как шапка */
+  background: #717a70; /* как шапка */
   color: #fff;
   border: none;
 }
 
 .btn:hover {
-  background: #00995e;
+  background: #717a70;
 }
 
 .btn--ghost {
    background: transparent;
-  color: #00704a;
-  border: 1px solid #00704a;
+  color: #717a70;
+  border: 1px solid #717a70;
   padding: 12px 18px;   /* добавь это */
   line-height: 1.2;
 }
