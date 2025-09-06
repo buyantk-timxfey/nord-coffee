@@ -18,7 +18,6 @@ document.querySelectorAll('.nav a').forEach(link=>{
   const els = {
     price: form.querySelector('input[name="price"]'),
     cups:  form.querySelector('input[name="cups"]'),
-    days:  form.querySelector('input[name="days"]'),
     ingredients: form.querySelector('input[name="ingredients"]'),
     rent:  form.querySelector('input[name="rent"]'),
     acq:   form.querySelector('input[name="acq"]'),
@@ -33,7 +32,7 @@ document.querySelectorAll('.nav a').forEach(link=>{
   function recalc(){
     const price = +els.price.value || 0;
     const cups  = +els.cups.value  || 0;
-    const days  = +els.days.value  || 0;
+    const days = 31;
 
     const revenue = price * cups * days;
 

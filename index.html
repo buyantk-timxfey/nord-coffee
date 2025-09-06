@@ -16,39 +16,46 @@
       <button class="burger" aria-label="Открыть меню"></button>
       <nav class="nav">
          <a href="#contacts" class="btn">Отправить заявку</a>
-         <a href="https://t.me/nordcoffeee" target="_blank" rel="noopener" class="btn btn--ghost">Написать в Telegram</a>
+         <a href="https://wa.me/79821404149" target="_blank" rel="noopener" class="btn btn--ghost">Написать в WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="hero" class="hero">
-    <div class="container hero__grid">
-      <div class="hero__text">
-        <h1>
-          Ваш пассивный доход в кофейной чашке
-        </h1>
+  <div class="container hero__grid">
+    
+    <!-- Левая часть: текст -->
+    <div class="hero__text">
+      <h1>Ваш пассивный доход в кофейной чашке</h1>
 
-        <p class="hero__badge">
-          230 000 ₽ <span>вместо 280 000 ₽</span>
-        </p>
-        <h3>
-          Наше оборудование полностью подготовлено для запуска —
-          вам остаётся только начать бизнес с небольшими вложениями,
-          минимальными рисками и коротким сроком окупаемости.
-        </h3>
-        <p class="hero__badge">
-        <div class="hero__cta">
-          <a href="#contacts" class="btn">Оставить заявку</a>
-           <a href="https://t.me/nordcoffeee" target="_blank" rel="noopener" class="btn btn--ghost">Написать в Telegram</a>
-        </div>
-      </div>
+      <p class="price-badge">
+        <span class="price-badge__now">230&nbsp;000 ₽</span>
+        <span class="price-badge__sep">вместо</span>
+        <span class="price-badge__old">280&nbsp;000 ₽</span>
+      </p>
 
-      <div class="hero__img">
-        <img src="images/coffee-point.png" alt="Кофе-поинт Nord Coffee"/>
+      <p class="hero-desc">
+        Наше оборудование полностью подготовлено для запуска — вам остаётся только начать бизнес с небольшими вложениями,
+        минимальными рисками и коротким сроком окупаемости.
+      </p>
+
+      <p class="hero-subtag">Готовый кофейный автомат с доставкой по всей России</p>
+
+      <div class="hero__cta">
+        <a href="#contacts" class="btn">Оставить заявку</a>
+        <a href="https://t.me/nordcoffeee" target="_blank" rel="noopener" class="btn btn--ghost">Написать в Telegram</a>
       </div>
     </div>
-  </section>
+
+    <!-- Правая часть: картинка -->
+    <div class="hero__img">
+      <img src="images/coffee-point.png" alt="Кофе-поинт Nord Coffee"/>
+    </div>
+
+  </div>
+</section>
+
 
 
   <!-- Почему мы -->
@@ -242,11 +249,13 @@
       Подсчёт прибыли
     </h2>
 
+
 <p class="profit__lead">
   Продавая <strong>11</strong> напитков в день по <strong>150 ₽</strong>, 
   при типовых расходах (ингредиенты 30%, аренда 5%, эквайринг 2%, налоги 4%) 
-  чистая прибыль составит около <strong>30&nbsp;690 ₽</strong> в месяц.
+  чистая прибыль составит около <strong>30&nbsp;179 ₽</strong> в месяц.
 </p>
+
 
     <form class="calc" id="profit-calc" onsubmit="return false;">
       <div class="calc__grid">
@@ -279,19 +288,6 @@
 
         <div class="calc__group">
           <label>
-            <!-- calendar -->
-            <svg class="calc__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2"/>
-              <path d="M16 2v4M8 2v4M3 10h18"/>
-            </svg>
-            Дней в месяце
-          </label>
-          <input type="number" name="days" min="1" max="31" step="1" value="30" inputmode="numeric">
-        </div>
-
-        <div class="calc__group">
-          <label>
             <!-- percent -->
             <svg class="calc__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -299,7 +295,7 @@
               <circle cx="6.5" cy="6.5" r="2.5"/>
               <circle cx="17.5" cy="17.5" r="2.5"/>
             </svg>
-            Ингредиенты
+            Ингредиенты, %
           </label>
           <input type="number" name="ingredients" min="0" max="100" step="1" value="30" inputmode="numeric">
         </div>
@@ -312,7 +308,7 @@
               <circle cx="6.5" cy="6.5" r="2.5"/>
               <circle cx="17.5" cy="17.5" r="2.5"/>
             </svg>
-            Аренда
+            Аренда, %
           </label>
           <input type="number" name="rent" min="0" max="100" step="1" value="5" inputmode="numeric">
         </div>
@@ -325,7 +321,7 @@
               <circle cx="6.5" cy="6.5" r="2.5"/>
               <circle cx="17.5" cy="17.5" r="2.5"/>
             </svg>
-            Эквайринг
+            Эквайринг, %
           </label>
           <input type="number" name="acq" min="0" max="100" step="1" value="2" inputmode="numeric">
         </div>
@@ -338,7 +334,7 @@
               <circle cx="6.5" cy="6.5" r="2.5"/>
               <circle cx="17.5" cy="17.5" r="2.5"/>
             </svg>
-            Налоги
+            Налоги, %
           </label>
           <input type="number" name="tax" min="0" max="100" step="1" value="4" inputmode="numeric">
         </div>
@@ -508,7 +504,7 @@
 
       <div class="lead__actions">
         <button type="submit" class="btn">Отправить заявку</button>
-        <a class="btn btn--ghost" href="https://t.me/nordcoffeee" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="btn btn--ghost" href="https://wa.me/79821404149" target="_blank" rel="noopener">Написать в WhatsApp</a>
       </div>
 
       <label class="lead__agree">

@@ -158,7 +158,7 @@ body {
 }
 
 .btn:hover {
-  background: #717a70;
+  background: #5b625a;
 }
 
 .btn--ghost {
@@ -198,7 +198,7 @@ body {
     right: 5%;
     top: 64px;
     gap: 10px;
-    background: #00704a;
+    background: #5b625a;
     padding: 12px;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -252,7 +252,7 @@ body {
 
 .why__icon{
   width:48px;height:48px;
-  color:#00704a; /* тот же живой зелёный */
+  color:#a5b5a2; /* тот же живой зелёный */
   margin:2px auto 12px;
   display:block;
 }
@@ -301,7 +301,7 @@ body {
 
 .loc__icon{
   width:48px; height:48px;
-  color:#00704a; /* фирменный зелёный */
+  color:#a5b5a2; /* фирменный зелёный */
   margin:2px auto 12px;
   display:block;
 }
@@ -355,7 +355,7 @@ body {
 .steps__icon {
   width: 48px;
   height: 48px;
-  color: #00704a; /* фирменный зелёный */
+  color: #a5b5a2; /* фирменный зелёный */
   margin: 2px auto 12px;
   display: block;
 }
@@ -385,7 +385,7 @@ body {
   margin-bottom:22px;
   display:flex;align-items:center;justify-content:center;gap:10px;
 }
-.profit__title-icon{width:28px;height:28px;color:#00704a}
+.profit__title-icon{width:28px;height:28px;color:#a5b5a2}
 
 .calc{
   background:#fff;
@@ -404,7 +404,7 @@ body {
   display:flex;align-items:center;gap:8px;
   font-size:.95rem;color:#333;margin-bottom:6px;font-weight:600;
 }
-.calc__icon{width:18px;height:18px;color:#00704a}
+.calc__icon{width:18px;height:18px;color:#a5b5a2}
 .calc__group input{
   width:100%;
   padding:10px 12px;
@@ -432,8 +432,8 @@ body {
   display:flex;align-items:center;gap:8px;
   font-size:.9rem;color:#666;margin-bottom:4px;
 }
-.calc__result-icon{width:18px;height:18px;color:#00704a}
-.calc__net strong{ color:#00704a; }
+.calc__result-icon{width:18px;height:18px;color:#a5b5a2}
+.calc__net strong{ color:#2e7d32; }
 
 .calc__note{
   margin-top:10px;
@@ -482,14 +482,14 @@ body {
 }
 
 .faq__item[open] summary {
-  color: #00704a;
+  color: #a5b5a2;
 }
 
 .faq__icon {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
-  color: #00704a;
+  color: #a5b5a2;
 }
 
 .faq__a {
@@ -561,7 +561,7 @@ body {
   width: 16px;
   height: 16px;
 }
-.lead__agree a{color:#00704a;text-decoration:underline}
+.lead__agree a{color:#a5b5a2;text-decoration:underline}
 
 .toast{
   position:fixed; left:50%; bottom:80px; transform:translateX(-50%) translateY(10px);
@@ -692,7 +692,7 @@ body {
 }
 
 .powered a {
-  color: #00704a;
+  color: #a5b5a2;
   text-decoration: none;
   font-weight: 600;
 }
@@ -700,3 +700,74 @@ body {
 .powered a:hover {
   text-decoration: underline;
 }
+.price__now {
+  padding: 4px 10px;
+  border: 2px solid #5b625a;  /* цвет шапки */
+  border-radius: 10px;
+  font-weight: 700;
+  color: #5b625a;
+}
+
+.price__old {
+  color: #c62828;
+  text-decoration: line-through;
+}
+/* --- Price capsule (hero) --- */
+.price-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 14px;
+  background:#fff;
+  border:1px solid #5b625a;         /* рамка в цвет шапки */
+  border-radius:999px;               /* аккуратная капсула */
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+.price-badge__now{color:#5b625a;font-weight:700}
+.price-badge__sep{color:#666;font-weight:600}
+.price-badge__old{color:#c62828;text-decoration:line-through;font-weight:600}
+
+/* --- Hero price capsule --- */
+.price-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: #fff;
+  border: 1px solid #5b625a;   /* цвет шапки */
+  border-radius: 999px;        /* делает капсулу */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0 16px;
+}
+
+.price-badge__now {
+  color: #5b625a;              /* зелёный */
+  font-weight: 700;
+}
+
+.price-badge__sep {
+  color: #444;                 /* серый для "вместо" */
+  font-weight: 500;
+}
+
+.price-badge__old {
+  color: #c62828;              /* красный */
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+/* --- Hero texts --- */
+.hero-desc {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: #222;
+  font-weight: 600;   /* жирный текст */
+}
+
+.hero-subtag {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+  font-weight: 700;   /* ещё жирнее */
+  color: #717a70;
+}
+
